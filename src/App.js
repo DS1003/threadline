@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './components/Header';  // Assurez-vous que le chemin est correct
+import MainFeed from './components/MAinFeed';
+import './index.css'; // ou './tailwind.css' selon le nom de ton fichier
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    <div>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <Header />
+      <MainFeed />
+      {/* Le reste de ton application */}
     </div>
   );
 }
