@@ -8,7 +8,7 @@ const StoryCircle = ({ name, imageUrl, isYourStory, onAddStory, onViewStory }) =
       className={`relative w-16 h-16 ${isYourStory ? 'bg-gray-200' : 'bg-gradient-to-tr from-yellow-400 to-fuchsia-600'} rounded-full p-0.5`}
     >
       <img
-        src={imageUrl}
+        src="https://avatars.githubusercontent.com/u/100100154?v=4"
         alt={`${name}'s story`}
         className="w-full h-full object-cover rounded-full border-2 border-white"
       />
@@ -29,7 +29,7 @@ const AddStoryModal = ({ isOpen, onClose, onAddStory }) => {
 const StoryViewModal = ({ isOpen, onClose, story }) => {
   const [liked, setLiked] = useState(false);
   const [comment, setComment] = useState('');
-  const [comments, setComments] = useState([]);
+  const [comments, setComments] = useState([]); 
 
   if (!isOpen || !story) return null;
 
@@ -53,7 +53,7 @@ const StoryViewModal = ({ isOpen, onClose, story }) => {
   };
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4">
+    <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center max-w-2xl  justify-center p-4">
       <div className="bg-white rounded-lg w-full max-w-lg overflow-hidden">
         <div className="flex justify-between items-center p-4 border-b">
           <h2 className="text-xl font-bold">{story.name}'s Story</h2>

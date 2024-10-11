@@ -8,18 +8,18 @@ export default function Header() {
   const [isSearchFocused, setIsSearchFocused] = useState(false);
 
   return (
-    <header className="bg-white border-b transition-shadow duration-300 ease-in-out" style={{
+    <header className="bg-white  border-b transition-shadow duration-300 ease-in-out" style={{
       boxShadow: isSearchFocused ? '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)' : 'none'
     }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <svg className="h-8 w-8 text-blue-600 transition-transform duration-300 ease-in-out transform hover:scale-110" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg className="h-8 w-8 text-[#cc8c87ab] transition-transform duration-300 ease-in-out transform hover:scale-110" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
               <polyline points="9 22 9 12 15 12 15 22"></polyline>
             </svg>
-            <span className="ml-2 text-blue-600 font-bold text-xl">WeShare</span>
+            <span className="ml-2 text-[#cc8c87ab] font-bold text-xl">Threadline</span>
           </div>
 
           {/* Search bar */}

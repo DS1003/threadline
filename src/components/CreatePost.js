@@ -36,7 +36,7 @@ export default function CreatePostCard() {
       <form onSubmit={handleSubmit}>
         <div className="flex items-start mb-4">
           <img
-            src="/placeholder.svg?height=40&width=40"
+            src="https://avatars.githubusercontent.com/u/100100154?v=4"
             alt="User avatar"
             className="w-10 h-10 rounded-full mr-3"
           />
@@ -74,7 +74,7 @@ export default function CreatePostCard() {
             <button
               type="button"
               onClick={handleAddTag}
-              className="bg-blue-500 text-white px-4 py-2 rounded-r-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="bg-[#CC8C87] text-white px-4 py-2 rounded-r-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               Add Tag
             </button>
@@ -101,7 +101,7 @@ export default function CreatePostCard() {
         </div>
         <button
           type="submit"
-          className="mt-4 w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="mt-4 w-full bg-[#CC8C87] text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
         >
           Post
         </button>
